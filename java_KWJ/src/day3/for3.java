@@ -13,7 +13,7 @@ public class for3 {
 		int i;
 		
 		for(i=1; i <= 9 ; i++) {
-			System.out.println("7 x" + i + "=" 7 * i);
+			System.out.println("7 x" = i + " "  + 7 * 1 );
 			
 		}
 

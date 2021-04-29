@@ -19,7 +19,7 @@ public class For7 {
 		
 			}
 		}
-		System.out.println(num1 + "과 " + num2 + "의 최대 공약수 : ");
+		System.out.println(num1 + "과 " + num2 + "의 최대 공약수 : ", a);
 	 }
   }
 
