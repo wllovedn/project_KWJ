@@ -15,7 +15,7 @@ public class For7 {
 		
 		int a, num1 = 8, num2 =12 ;
 		for (a = 1 ; a <= num1 ; a += 1 ) {
-			if(num1 % a == 0 && num2 % a == 0) {
+			if(a % num1 == 0 && a % num2 == 0) {
 		
 			}
 		}
