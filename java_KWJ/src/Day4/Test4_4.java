@@ -7,7 +7,7 @@ public class Test4_4 {
 	public static void main(String[] args) {
 		//
 		
-		int min = 1, max = 25;
+		int min = 1, max = 57;
 		//Math.random()은 0보다 크거나 같고 1보다 작은 임의의 실수를 생성하는 기능
 		/* Math.random() : A
 		 * 0 <= A < 1
