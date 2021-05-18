@@ -13,6 +13,7 @@ public class AccountBookTest {
 		Scanner scan = new Scanner(System.in);
 		
 		do {
+			try {
 			abp.printMenu();
 			menu = scan.nextInt();
 			
@@ -43,9 +44,15 @@ public class AccountBookTest {
 				}
 				break;
 				case 5 : System.out.println("프로그램 종료"); break;
-		 		default:
-		 			System.out.println(" 잘못된 메뉴입니다 ");
+		 		default: System.out.println(" 잘못된 메뉴입니다 ");
 				}
+				}
+		 		catch(Exception e) {
+				System.out.println(e.getMessage());
+				scan.nextLine();
+				menu = 0;
+				
+			}	
 			}while(menu!=5);
 		}
 }
