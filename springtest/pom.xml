@@ -115,7 +115,14 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency>     
+		</dependency>   
+		<!-- lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.20</version>
+			<scope>provided</scope>
+		</dependency>	  
 		<!-- mybatis 의존성 추가 -->
 		<dependency>
     		<groupId>org.mybatis</groupId>
@@ -134,6 +141,7 @@
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>8.0.11</version>
 		</dependency>
+		
 		<!-- spring-jdbc 추가 -->
 		<dependency>
 		    <groupId>org.springframework</groupId>
