@@ -13,27 +13,26 @@
 <body>
 <div class="container">
   <h2>게시판</h2>
-  <div class="form-group">
-  	<label>제목</label>
-  	<input type= "text" class="form-control" value="${board.title}" readonly>
-  </div>	
-  <div class="form-group">
-  	<label>작성자</label>
-  	<input type= "text" class="form-control" value="${board.writer }">
-  </div>
-    <div class="form-group">
-  	<label>작성일</label>
-  	<input type= "text" class="form-control" value="${board.registerd}">
- 	</div> 
-    <div class="form-group">
-  	<label>조회수</label>
-  	<input type= "text" class="form-control" value"${board.views}" readonly)>
-    <div class="form-group">
-    </div>
-  	<label>내용</label>
-  	<textarea class ="form-control" readonly> </textarea>>
-  	
-
+	<div class="form-group">
+  		<label>제목</label>
+  		<input type= "text" class="form-control">
+	</div>	
+	<div class="form-group">
+  		<label>작성자</label>
+  		<input type= "text" class="form-control">
+	</div>
+	<div class="form-group">
+  		<label>작성일</label>
+  		<input type= "text" class="form-control" >
+	</div> 
+	<div class="form-group">
+  		<label>조회수</label>
+  		<input type= "text" class="form-control" >
+	</div>
+	<div class="form-group">
+   		<label>내용</label>
+  		<textarea class ="form-control" rows="10"></textarea>
+	</div>
 </div>
 </body>
 </html>

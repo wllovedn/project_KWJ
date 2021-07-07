@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import kr.green.test.service.BoardService;
@@ -39,4 +40,19 @@ public class BoardController {
 		mv.setViewName("board/detail");
 		return mv;
 	}
+	@RequestMapping(value="/board/register", method=RequestMethod.GET)
+	public ModelAndView boardRegisterGet(ModelAndView mv) {
+		
+		mv.setViewName("board/register");
+		return mv;
+		
+	}
+	//화면에서 보내준 제목, 작성자, 내용을 받아서 콘솔에 출력
+	@RequestMapping(value="/board/register", method=RequestMethod.POST)
+	public ModelAndView boardRegisterPost(ModelAndView mv,BoardVO board) {
+		boardService.insertBoard(board);
+		mv.setViewName("board/register");
+		return mv;
+	}
+		
 }
